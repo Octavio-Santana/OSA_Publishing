@@ -9,4 +9,6 @@ Vale mencionar que a ordem dos artigos corresponde a relevância dos mesmo, de a
 Pretendo no futuro:
 
 * Utilizar os link's do pdf para fazer download's dos artigos, porém nem todas as revistas tem acesso livre, ao menos que esteja conectado alguma universidade e que rederecione o link para o site da CAPES-Periodicos.
-* Acessar os link's do Abstract, extrai o abstract e verificar quantas e quais citações tem cada artigo.
+* Acessar os link's do Abstract, extrair o texto e verificar quantas citações tem cada artigo. Ter em mãos quais artigos tem mais citações é interessante para o pesquisador (estudantes de graduação, mestrado, doutorado e pós-doc), principalmente se o mesmo está iniciando sua pesquisa no tema de busca.
+
+
