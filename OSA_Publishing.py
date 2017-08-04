@@ -3,9 +3,9 @@
 Created on Thu Aug  3 19:09:44 2017
 
 Baixar informações gerais de todos os artigos no site osapublishing referente
-ao tema "Goos-Hanchen shift
+ao tema de interesse.
 
-@author: octavio
+@author: Octavio
 """
 
 from selenium import webdriver
@@ -31,8 +31,7 @@ busc = raw_input("Digite o tema de pesquisa: ")
     # Aqui procuro pela caixa de busca
 elem = driver.find_element_by_name("q")
     # Insiro busc na caixa de busca
-elem.send_keys(busc)
-    # Corresponde aperter Enter na caixa de busca
+elem.send_keys(busc)    
 elem.send_keys(Keys.RETURN)
 
 #-----------------------------------------------------------------------------#
@@ -56,7 +55,7 @@ def numb_page():
         return int(count/20)+1
 
 ##-----------------------------------------------------------------------------#
-#    # Função Link: Notei que em alguns não tem link's para html e/ou pdf
+#    # Função Link: Notei que em alguns artigos não tem link's para html e/ou pdf
 ##-----------------------------------------------------------------------------#
 def Link(s, base_url):
     if len(s.findAll("a"))==3:
@@ -75,7 +74,7 @@ def Link(s, base_url):
                     base_url+"/"+s.findAll("a")[1].get("href")
                     ]
     else:
-        # Esse é o menos provavel de acontecer #
+        # Esse é o menos provavel de acontecer (Nas buscas que fiz não teve essa opção) #
         return [
                     base_url+"/"+s.findAll("a")[0].get("href"),
                     None,
@@ -117,7 +116,7 @@ for i in range(n_page):
                        "Link PDF": link[2]
                        }
         paper.append(paper_entry)
-
+    # Depois que faço soup, para ir para a página seguinte tenho que fazer novamente esse comando #
     all_page = driver.find_elements_by_xpath("//a[@data-value]")
 
 print "\n Acabou! \n"
