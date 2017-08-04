@@ -1,7 +1,7 @@
 # OSA Publishing
 
-Estou utilizando o Selenium para navegar no site osapublishing e o BeautifulSoup para extrair nome dos autores, 
-titlo, revista, ano, link do abstract, link do html e link do pdf de todos os artigos referente ao tema de busca. 
+Estou utilizando o Selenium para navegar no site https://www.osapublishing.org/ e o BeautifulSoup para extrair nome dos autores, 
+título, revista, ano, link do abstract, link do html e link do pdf de todos os artigos referente ao tema de busca. 
 Em  seguida salvo em um arquivo csv.
 
 Vale mencionar que a ordem dos artigos corresponde a relevância dos mesmo, de acordo com o site.
